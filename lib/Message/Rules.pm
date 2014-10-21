@@ -92,9 +92,9 @@ Message::Rules - Apply a pile of rules to incoming messages
 
 =head1 DESCRIPTION
 
-    my $r = Message::Rules->new();
-    $r->load_rules_from_directory('conf/dir');
-    my $m = $r->merge_rules({main => 'thing'});
+    my $rules = Message::Rules->new();
+    $rules->load_rules_from_directory('conf/dir');
+    my $m = $rules->merge_rules({main => 'thing'});
 
 
 =head1 METHODS
