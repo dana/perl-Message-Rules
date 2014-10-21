@@ -12,8 +12,6 @@ Message::Rules - Apply a pile of rules to incoming messages
     $r->load_rules_from_directory('conf/dir');
     my $m = $r->merge_rules({main => 'thing'});
 
-
-
 # METHODS
 
 ## load\_rules\_from\_directory($directory);
