@@ -21,6 +21,7 @@ sub new {
 my @loaded_configs;
 my $add_config = sub {
     my $thing = shift;
+    return if $thing->{is_not_a_rule};
     $thing->{order} = 0 unless $thing->{order};
     push @loaded_configs, $thing;
 };
